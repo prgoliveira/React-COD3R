@@ -10,8 +10,8 @@ export default _ => {
     return (
         <div id="app">
             <Aleatorio 
-                min={1}
-                max={10}
+                min={100}
+                max={1}
             />
             <Fragmento />
             <Primeiro></Primeiro>

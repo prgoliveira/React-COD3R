@@ -1,17 +1,19 @@
 import React from 'react'
 
-export default (props) =>{
-    const min = props.min
-    const max = props.max
-    console.log(props)
-    const aleatorio = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-    const random = aleatorio(min, max)
-    return(
+export default (props) => {
+
+    let { min, max} = props
+
+    if(min>max) [min, max] = [max, min]
+
+    const aleatorio = parseInt((Math.random() * (max - min + 1)) + min)
+
+    return (
         <React.Fragment>
             <h2>Desafio Numero aleatorio</h2>
-            <p>O numero aleatorio gerado foi {random}</p>
+            <p>O valor minimo é {min}</p>
+            <p>O valor maximo é {max}</p>
+            <p>O numero aleatorio gerado foi <b>{aleatorio}</b></p>
         </React.Fragment>
     )
 }
