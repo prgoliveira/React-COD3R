@@ -1,10 +1,11 @@
 import React from 'react'
-export default function () {
-    const msg = 'Situação do aluno'
+
+export default () => {
+
     return (
         <div>
-            <h2>Alunos</h2>
-            <h3> {msg} </h3>
+            <h2>Componente</h2>
+            <p>Primeiro componente</p>
         </div>
     )
 }
