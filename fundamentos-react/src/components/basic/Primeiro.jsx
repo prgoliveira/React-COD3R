@@ -1,10 +1,10 @@
 import React from 'react'
 export default function () {
-    const msg = 'Seja bem vindo'
+    const msg = 'Situação do aluno'
     return (
     <div>
-        <h2>Primeiro componente</h2>
-    <p> {msg} </p>
+        <h2>Alunos</h2>
+    <h3> {msg} </h3>
     </div>
     )
 }
