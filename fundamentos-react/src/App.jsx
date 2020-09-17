@@ -2,6 +2,8 @@ import React from 'react'
 
 import './App.css'
 
+import ListaProdutos from './components/repeticao/ListaProdutos'
+import ListaAlunos from './components/repeticao/ListaAlunos'
 import FamiliaMembro from './components/basic/FamiliaMembro'
 import Familia from './components/basic/Familia'
 import Card from './components/layout/Card'
@@ -21,11 +23,19 @@ export default _ => {
 
             <div className="Cards" >
 
+                <Card titulo="#07 - Desafio Repetição" color="#32CD32" >
+                    <ListaProdutos></ListaProdutos>
+                </Card>
+
+                <Card titulo="#06 - Repetição" color="#ff1d58" >
+                    <ListaAlunos></ListaAlunos>
+                </Card>
+
                 <Card titulo="#05 - Componente com filhos" color="#a28089" >
                     <Familia sobrenome="Oliveira">
-                        <FamiliaMembro nome="Gabriel"/>
-                        <FamiliaMembro nome="Matheus"/>
-                        <FamiliaMembro nome="Ana"/>
+                        <FamiliaMembro nome="Gabriel" />
+                        <FamiliaMembro nome="Matheus" />
+                        <FamiliaMembro nome="Ana" />
                     </Familia>
                 </Card>
 
