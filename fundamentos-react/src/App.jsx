@@ -2,6 +2,8 @@ import React from 'react'
 
 import './App.css'
 
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import ParOuImpar from './components/condicional/ParOuImpar'
 import ListaProdutos from './components/repeticao/ListaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import FamiliaMembro from './components/basic/FamiliaMembro'
@@ -22,6 +24,12 @@ export default _ => {
             <h1>Fundamentos React</h1>
 
             <div className="Cards" >
+
+                <Card titulo="#08 - Renderização Condicional" color="#BDB76B" >
+                    <ParOuImpar min={1} max={60} ></ParOuImpar>
+                    <UsuarioInfo usuario={{nome:'Lucas'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{email:'lucas@gmail.com'}}></UsuarioInfo>
+                </Card>
 
                 <Card titulo="#07 - Desafio Repetição" color="#32CD32" >
                     <ListaProdutos></ListaProdutos>
