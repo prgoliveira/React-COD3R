@@ -26,17 +26,17 @@ export default _ => {
             <div className="Cards" >
 
                 <Card titulo="#08 - Renderização Condicional" color="#BDB76B" >
-                    <ParOuImpar min={1} max={60} ></ParOuImpar>
-                    <UsuarioInfo usuario={{nome:'Lucas'}}></UsuarioInfo>
-                    <UsuarioInfo usuario={{email:'lucas@gmail.com'}}></UsuarioInfo>
+                    <ParOuImpar min={1} max={60} />
+                    <UsuarioInfo usuario={{ nome: 'Gabriel' }} />
+                    <UsuarioInfo />
                 </Card>
 
                 <Card titulo="#07 - Desafio Repetição" color="#32CD32" >
-                    <ListaProdutos></ListaProdutos>
+                    <ListaProdutos />
                 </Card>
 
                 <Card titulo="#06 - Repetição" color="#ff1d58" >
-                    <ListaAlunos></ListaAlunos>
+                    <ListaAlunos />
                 </Card>
 
                 <Card titulo="#05 - Componente com filhos" color="#a28089" >
@@ -63,7 +63,7 @@ export default _ => {
                 </Card>
 
                 <Card titulo="#01 - Primeiro componente" color="#7bc043" >
-                    <Primeiro></Primeiro>
+                    <Primeiro />
                 </Card>
 
             </div>
