@@ -27,7 +27,7 @@ class Contador extends Component {
 
     zerar = () => {
         this.setState({
-            numero: this.state.numero = 0
+            numero: this.state.numero - this.state.numero
         })
     }
 

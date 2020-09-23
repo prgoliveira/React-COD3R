@@ -16,7 +16,8 @@ export default props => {
 
     return (
         <div>
-            <h2>{valor}</h2>
+            <h2>Componente controlado por input</h2>
+            <p>{valor}</p>
             <input style={{ fontSize: '70%' }} value={valor} onChange={quandoDigitar} />
         </div>
     )
